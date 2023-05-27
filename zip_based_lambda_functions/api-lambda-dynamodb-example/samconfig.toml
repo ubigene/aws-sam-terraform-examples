@@ -1,0 +1,5 @@
+version=0.1
+[default]
+[default.build.parameters]
+# Required for Terraform support
+beta_features="true"

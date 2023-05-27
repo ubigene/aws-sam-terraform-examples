@@ -17,7 +17,7 @@ terraform {
 }
 
 provider "aws" {
-    region = "<AWS region>" # eg. us-east-1
+    region = "eu-west-2"
 }
 
 

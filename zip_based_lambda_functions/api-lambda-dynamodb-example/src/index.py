@@ -7,10 +7,12 @@ from botocore.config import Config
 import json
 import os
 import uuid
-import ptvsd
+import debugpy
 
 # ptvsd.enable_attach(address=('0.0.0.0', 9999), redirect_output=True)
 # ptvsd.wait_for_attach()
+debugpy.listen(('0.0.0.0', 9999))
+debugpy.wait_for_client()
 
 client = boto3.client('dynamodb')
 sts = boto3.client('sts')

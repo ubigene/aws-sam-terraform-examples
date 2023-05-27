@@ -1,2 +1,4 @@
 requests
-ptvsd
+debugpy
+urllib3 == 1.26.15
+certifi
